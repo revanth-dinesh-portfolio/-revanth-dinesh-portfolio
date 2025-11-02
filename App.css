@@ -1,0 +1,52 @@
+*{box-sizing:border-box}body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;color:#0f172a;margin:0;background:#fff}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.site-header{border-bottom:1px solid #f1f5f9;background:#fff}
+.header-grid{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;gap:12px;align-items:center}
+.avatar{width:48px;height:48px;border-radius:10px;background:#f59e0b;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.name{font-weight:700}
+.tag{font-size:13px;color:#475569}
+.nav a{margin-left:18px;text-decoration:none;color:#0f172a}
+.nav .btn{background:#f59e0b;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;padding:40px 0}
+.hero-text h1{font-size:28px;margin:0 0 12px}
+.lead{color:#334155;margin-bottom:18px}
+.actions{display:flex;gap:12px;margin-bottom:12px}
+.cta{background:#f59e0b;color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+.cta.alt{background:transparent;border:1px solid #e2e8f0;color:#0f172a}
+.contact-info{color:#64748b;font-size:13px;margin-top:8px}
+
+.hero-media .photo{height:180px;background:#f8fafc;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#94a3b8}
+.thumbs{display:flex;gap:8px;margin-top:12px}
+.thumb{flex:1;height:50px;background:#f8fafc;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:13px}
+
+.card{background:#fff;padding:18px;border-radius:10px;margin-bottom:16px;box-shadow:0 1px 2px rgba(15,23,42,0.03)}
+.work .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card-head{display:flex;gap:12px;align-items:center}
+.logo{width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+.logo.s{background:#f59e0b}
+.logo.a{background:#e2e8f0;color:#0f172a}
+.logo.r{background:#ef4444}
+.logo.m{background:#34d399;color:#064e3b}
+.card ul{margin-top:10px;padding-left:18px;color:#334155}
+.result{margin-top:12px;font-weight:600;color:#0f172a}
+
+.skills .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.skill-grid div{background:#f8fafc;padding:12px;border-radius:8px}
+
+.gallery .thumbs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.thumb-large{grid-column:span 2;background:#f8fafc;height:120px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#94a3b8}
+
+.contact .contact-cards{display:flex;gap:12px;margin-top:12px;flex-wrap:wrap}
+.contact-card{background:#fff;padding:10px 12px;border-radius:8px;border:1px solid #eef2f7;text-decoration:none;color:#0f172a}
+
+.footer{text-align:center;padding:26px 0;color:#94a3b8}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;gap:18px}
+  .work .grid{grid-template-columns:1fr}
+  .skills .skill-grid{grid-template-columns:1fr}
+  .gallery .thumbs-grid{grid-template-columns:repeat(2,1fr)}
+  .avatar{width:40px;height:40px}
+}
